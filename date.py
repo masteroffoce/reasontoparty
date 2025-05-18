@@ -14,4 +14,7 @@ else:
     current_month = current_time.strftime("%-m")
     current_day = current_time.strftime("%d")
 
-print(data[current_month][current_day])
+try:
+    print(data[current_month][current_day])
+except:
+    print()
